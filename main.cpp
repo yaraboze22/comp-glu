@@ -19,7 +19,7 @@ void init() {
     gluOrtho2D(-100, 100, -100, 100);
 
 }
-Yared Cs, [6/24/2022 12:36 PM]
+ 
 glClearColor(0.31, 0.58, 0.796, 0);
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
@@ -194,7 +194,7 @@ void display(void)
     
     //----------BULDING WINDOWS ROW2----------
 
-Yared Cs, [6/24/2022 12:36 PM]
+ 
 glColor3f(1.0f, 1.0f, 0.0f);
     glBegin(GL_POLYGON);
     glVertex2f(-5, 15);
