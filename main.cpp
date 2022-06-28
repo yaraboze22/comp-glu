@@ -27,12 +27,25 @@ glClearColor(0.31, 0.58, 0.796, 0);
 
 }
 
- 
-void display(void)
-{
-    
 
-    glClear(GL_COLOR_BUFFER_BIT);
+int main(int argc, char *argv[])
+{
+    glutInit(&argc, argv);
+    glutInitWindowSize(1200, 800);
+    glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
+    glutInitWindowPosition(200, 0);
+
+    glutCreateWindow("18101516 - 18101737");
+
+    init();
+
+    glutDisplayFunc(display);
+    glutTimerFunc(0, timer, 0);
+
+    glutMainLoop();
+
+    return 0;
+}
 
     
     //----------CLOUD 1----------
